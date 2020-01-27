@@ -15,7 +15,7 @@ mongoose.connect(process.env.URL_DB, {
     useUnifiedTopology: true
 });
 
-app.use(cors("https://semanaoministack10-web.herokuapp.com"));
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
